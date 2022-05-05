@@ -1,0 +1,102 @@
+[
+  {
+    "route": "user/login",
+    "method": "POST",
+    "description": "用户登录",
+    "params": [
+      {
+        "type": "field",
+        "optional": false,
+        "name": "account",
+        "description": "用户账号"
+      },
+      {
+        "type": "field",
+        "optional": false,
+        "name": "input",
+        "description": "用户输入(密码或验证码)"
+      },
+      {
+        "type": "field",
+        "optional": false,
+        "name": "method",
+        "description": "方式(phone/password)"
+      }
+    ]
+  },
+  {
+    "route": "user/register",
+    "method": "POST",
+    "description": "用户注册",
+    "params": [
+      {
+        "type": "field",
+        "optional": false,
+        "name": "phone",
+        "description": "手机号"
+      },
+      {
+        "type": "field",
+        "optional": true,
+        "name": "input",
+        "description": "验证码"
+      },
+      {
+        "type": "field",
+        "optional": true,
+        "name": "image",
+        "description": "图片"
+      },
+      {
+        "type": "field",
+        "optional": false,
+        "name": "method",
+        "description": "方式(email/card)"
+      }
+    ]
+  },
+  {
+    "route": "verify/send",
+    "method": "POST",
+    "description": "发送验证码",
+    "params": [
+      {
+        "type": "field",
+        "optional": false,
+        "name": "input",
+        "description": "用户输入(手机号/邮箱)"
+      },
+      {
+        "type": "field",
+        "optional": false,
+        "name": "method",
+        "description": "方式(email/phone)"
+      }
+    ]
+  },
+  {
+    "route": "verify/check",
+    "method": "POST",
+    "description": "验证验证码",
+    "params": [
+      {
+        "type": "field",
+        "optional": false,
+        "name": "input",
+        "description": "用户输入(手机号/邮箱)"
+      },
+      {
+        "type": "field",
+        "optional": false,
+        "name": "code",
+        "description": "验证码"
+      },
+      {
+        "type": "field",
+        "optional": false,
+        "name": "method",
+        "description": "方式(email/phone)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+fun Routing.authentication() {
+    route("user") {
+        /**
+         * route user/login
+         * method POST
+         * desc 用户登录
+         * field account 用户账号
+         * field input 用户输入(密码或验证码)
+         * field method 方式(phone/password)
+         */
+        post("/login") {
+
+        }
+        /**
+         * route user/register
+         * method POST
+         * desc 用户注册
+         * field phone 手机号
+         * field? input 验证码
+         * field? image 图片
+         * field method 方式(email/card)
+         */
+        post("/register") {
+
+        }
+
+        route("/verify") {
+            /**
+             * route verify/send
+             * method POST
+             * desc 发送验证码
+             * field input 用户输入(手机号/邮箱)
+             * field method 方式(email/phone)
+             */
+            post("/send") {
+
+            }
+            /**
+             * route verify/check
+             * method POST
+             * desc 验证验证码
+             * field input 用户输入(手机号/邮箱)
+             * field code 验证码
+             * field method 方式(email/phone)
+             */
+            post("/check") {
+
+            }
+        }
+    }
+}

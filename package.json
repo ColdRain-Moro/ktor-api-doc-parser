@@ -1,0 +1,12 @@
+{
+  "name": "ktor-api-doc-parser",
+  "version": "1.0.0",
+  "description": "api doc parser for ktor framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "Rain",
+  "license": "ISC"
+}
